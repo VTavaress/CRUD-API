@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS db_api;
+USE db_api;
+
+CREATE TABLE pessoa (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    apelido VARCHAR(32) UNIQUE NOT NULL,
+    nome VARCHAR(100) NOT NULL,
+    nascimento DATE NOT NULL,
+    stack JSON
+);
